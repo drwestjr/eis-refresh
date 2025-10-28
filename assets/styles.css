@@ -1,0 +1,52 @@
+
+/* Equinox Static Site - minimal, responsive CSS */
+:root{
+  --brand:#0e6fff; --ink:#0b1520; --muted:#5b6b7a; --bg:#ffffff; --surface:#f6f9ff; --maxw:1100px; --gap:18px; --radius:14px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+.container{max-width:var(--maxw);margin:0 auto;padding:0 var(--gap)}
+a{color:var(--brand);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* Nav */
+.nav{border-bottom:1px solid #eee;background:#fff;position:sticky;top:0;z-index:10}
+.nav__inner{display:flex;align-items:center;justify-content:space-between;padding:12px var(--gap)}
+.logo{display:flex;align-items:center;gap:10px;color:var(--ink);font-weight:700;font-size:18px;text-decoration:none}
+.nav__links{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;border:1px solid #dcdcdc;background:#fff;padding:10px 14px;border-radius:10px;font-weight:600}
+.btn--primary{background:var(--brand);border-color:var(--brand);color:#fff}
+.btn--ghost{background:transparent}
+
+/* Hero */
+.hero{padding:50px 0 18px}
+.hero h1{font-size: clamp(28px, 4vw, 46px);line-height:1.15;margin:0 0 10px 0}
+.lead{color:var(--muted);font-size:18px;max-width:65ch}
+
+/* Sections */
+.section{padding:28px 0}
+.section h2{font-size: clamp(22px, 3vw, 30px);margin:0 0 12px}
+.grid-3{display:grid;grid-template-columns: repeat(auto-fit, minmax(240px,1fr));gap:var(--gap)}
+.card{border:1px solid #eee;border-radius:var(--radius);padding:16px;background:#fff}
+.tags{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0;padding:0}
+.tags li{border:1px solid #eee;border-radius:999px;padding:8px 12px;background:#fafbfc}
+.quote{background:var(--surface);border-radius:var(--radius)}
+blockquote{margin:0;padding:18px;font-size:17px}
+cite{display:block;margin-top:10px;color:var(--muted);font-style:normal}
+
+/* Footer */
+.footer{border-top:1px solid #eee;padding:26px 0;color:var(--muted);background:#fff}
+.footer__cols{display:grid;grid-template-columns: repeat(auto-fit, minmax(220px,1fr));gap:var(--gap)}
+.footer__copy{margin-top:10px;font-size:14px}
+
+/* Page */
+.page h1{margin:20px 0 8px}
+.content p{margin:0 0 10px}
+.content ul{padding-left:20px}
+kbd{background:#f1f3f5;border:1px solid #e0e0e0;border-bottom-color:#c8c8c8;border-radius:6px;padding:2px 6px}
+
+/* Mobile tweaks */
+@media (max-width: 640px){
+  .nav__links{gap:10px}
+}
