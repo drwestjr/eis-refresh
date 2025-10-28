@@ -1,7 +1,7 @@
 
 /* Equinox Static Site - minimal, responsive CSS */
 :root{
-  --brand:#0e6fff; --ink:#0b1520; --muted:#5b6b7a; --bg:#ffffff; --surface:#f6f9ff; --maxw:1100px; --gap:18px; --radius:14px;
+  --brand: #9E1C1F; /* Equinox red */; --ink:#0b1520; --muted:#5b6b7a; --bg:#ffffff; --surface:#f6f9ff; --maxw:1100px; --gap:18px; --radius:14px;
 }
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
